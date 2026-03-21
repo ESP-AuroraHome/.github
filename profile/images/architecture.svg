@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 250" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- ESP32 group -->
+  <rect x="10" y="10" width="210" height="230" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="115" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8" letter-spacing="0.5">ESP32</text>
+
+  <rect x="28" y="46" width="174" height="52" rx="8" fill="#dbeafe" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="115" y="67" text-anchor="middle" font-size="12" font-weight="600" fill="#1e40af">SCD30</text>
+  <text x="115" y="85" text-anchor="middle" font-size="10" fill="#3b82f6">CO₂ · Temp · Humidité</text>
+
+  <rect x="28" y="108" width="174" height="52" rx="8" fill="#dbeafe" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="115" y="129" text-anchor="middle" font-size="12" font-weight="600" fill="#1e40af">BME280</text>
+  <text x="115" y="147" text-anchor="middle" font-size="10" fill="#3b82f6">Pression · Temp · Humidité</text>
+
+  <rect x="28" y="170" width="174" height="52" rx="8" fill="#dbeafe" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="115" y="191" text-anchor="middle" font-size="12" font-weight="600" fill="#1e40af">BH1750</text>
+  <text x="115" y="209" text-anchor="middle" font-size="10" fill="#3b82f6">Luminosité</text>
+
+  <!-- Arrow 1 -->
+  <line x1="222" y1="125" x2="288" y2="125" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="255" y="117" text-anchor="middle" font-size="9" fill="#6b7280">MQTT</text>
+  <text x="255" y="138" text-anchor="middle" font-size="9" fill="#6b7280">WiFi AP</text>
+
+  <!-- Orange Pi -->
+  <rect x="292" y="60" width="174" height="130" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="379" y="83" text-anchor="middle" font-size="11" fill="#c2410c" letter-spacing="0.3">Orange Pi</text>
+  <rect x="312" y="92" width="134" height="60" rx="8" fill="#fed7aa" stroke="#fb923c" stroke-width="1"/>
+  <text x="379" y="117" text-anchor="middle" font-size="12" font-weight="600" fill="#7c2d12">Broker MQTT</text>
+  <text x="379" y="135" text-anchor="middle" font-size="10" fill="#9a3412">port 1883</text>
+  <text x="379" y="173" text-anchor="middle" font-size="10" fill="#c2410c">topic: sensors/data</text>
+
+  <!-- Arrow 2 -->
+  <line x1="466" y1="125" x2="532" y2="125" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="499" y="115" text-anchor="middle" font-size="8.5" fill="#6b7280">instrumen-</text>
+  <text x="499" y="127" text-anchor="middle" font-size="8.5" fill="#6b7280">tation.ts</text>
+
+  <!-- Next.js group -->
+  <rect x="536" y="20" width="210" height="210" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="641" y="44" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d" letter-spacing="0.5">Next.js App</text>
+
+  <rect x="556" y="54" width="170" height="60" rx="8" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="641" y="79" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">API &amp; Server Actions</text>
+  <text x="641" y="97" text-anchor="middle" font-size="10" fill="#16a34a">Auth · SSE · Locale</text>
+
+  <rect x="556" y="128" width="170" height="60" rx="8" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="641" y="153" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">SQLite</text>
+  <text x="641" y="171" text-anchor="middle" font-size="10" fill="#16a34a">Prisma ORM</text>
+
+  <!-- Arrow 3 -->
+  <line x1="748" y1="125" x2="814" y2="125" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="781" y="117" text-anchor="middle" font-size="9" fill="#6b7280">SSE</text>
+  <text x="781" y="138" text-anchor="middle" font-size="9" fill="#6b7280">temps réel</text>
+
+  <!-- Dashboard -->
+  <rect x="818" y="75" width="152" height="100" rx="12" fill="#fdf4ff" stroke="#d8b4fe" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="894" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#7e22ce">Dashboard</text>
+  <text x="894" y="136" text-anchor="middle" font-size="10" fill="#9333ea">Recharts · PWA</text>
+  <text x="894" y="155" text-anchor="middle" font-size="10" fill="#9333ea">Dark / Light mode</text>
+</svg>
