@@ -74,60 +74,29 @@ Documentation complète du projet — guide utilisateur, référence technique, 
 
 Tous les capteurs communiquent via le bus **I²C** sur les broches `GPIO21 (SDA)` et `GPIO22 (SCL)` de l'ESP32.
 
-### Bus I²C — vue d'ensemble
-
-```
-ESP32 DevKit
-                          ┌─────────────┐
-              3.3V  ──────┤ VCC     VCC ├────── 3.3V
-               GND  ──────┤ GND     GND ├────── GND
-GPIO21 (SDA)  ──────┤ SDA     SDA ├──────── SDA (tous capteurs)
-GPIO22 (SCL)  ──────┤ SCL     SCL ├──────── SCL (tous capteurs)
-                          └─────────────┘
-```
+Broches I²C de l'ESP32 : `GPIO21 (SDA)` · `GPIO22 (SCL)` · alimentation `3.3V`
 
 ---
 
 ### SCD30 — CO₂ · Température · Humidité
 
-```
-     ESP32 DevKit                     SCD30
-   ┌─────────────┐               ┌──────────────┐
-   │         3.3V├───────────────┤VDD           │
-   │          GND├───────────────┤GND           │
-   │  GPIO21 SDA ├───────────────┤SDA           │
-   │  GPIO22 SCL ├───────────────┤SCL           │
-   │             │               │SEL ── GND    │  (I²C forcé)
-   └─────────────┘               └──────────────┘
-                                   Adresse : 0x61
-```
+![Montage SCD30](images/wiring-scd30.png)
 
-| Broche SCD30 | Connexion ESP32 |
-|---|---|
-| VDD | 3.3V |
-| GND | GND |
-| SDA | GPIO21 |
-| SCL | GPIO22 |
-| SEL | GND (sélectionne I²C) |
+| Broche SCD30 | ESP32 | Note |
+|---|---|---|
+| VDD | 3.3V | |
+| GND | GND | |
+| SDA | GPIO21 | |
+| SCL | GPIO22 | |
+| SEL | GND | Force le mode I²C |
 
 ---
 
 ### BME280 — Pression · Température · Humidité
 
-```
-     ESP32 DevKit                     BME280
-   ┌─────────────┐               ┌──────────────┐
-   │         3.3V├───────────────┤VCC           │
-   │          GND├───────────────┤GND           │
-   │  GPIO21 SDA ├───────────────┤SDA           │
-   │  GPIO22 SCL ├───────────────┤SCL           │
-   │             │               │CSB ── 3.3V   │  (I²C forcé)
-   │             │               │SDO ── GND    │  (adresse 0x76)
-   └─────────────┘               └──────────────┘
-                                   Adresse : 0x76
-```
+![Montage BME280](images/wiring-bme280.png)
 
-| Broche BME280 | Connexion ESP32 | Note |
+| Broche BME280 | ESP32 | Note |
 |---|---|---|
 | VCC | 3.3V | |
 | GND | GND | |
@@ -140,19 +109,9 @@ GPIO22 (SCL)  ──────┤ SCL     SCL ├──────── SCL 
 
 ### BH1750 — Luminosité
 
-```
-     ESP32 DevKit                     BH1750
-   ┌─────────────┐               ┌──────────────┐
-   │         3.3V├───────────────┤VCC           │
-   │          GND├───────────────┤GND           │
-   │  GPIO21 SDA ├───────────────┤SDA           │
-   │  GPIO22 SCL ├───────────────┤SCL           │
-   │             │               │ADDR ── GND   │  (adresse 0x23)
-   └─────────────┘               └──────────────┘
-                                   Adresse : 0x23
-```
+![Montage BH1750](images/wiring-bh1750.png)
 
-| Broche BH1750 | Connexion ESP32 | Note |
+| Broche BH1750 | ESP32 | Note |
 |---|---|---|
 | VCC | 3.3V | |
 | GND | GND | |
