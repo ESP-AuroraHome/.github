@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ESP-AuroraHome/aurora-home-documentation/main/public/assets/logo.png" width="72" height="72" alt="Aurora Home" />
+<img src="profile/images/logo.png" width="72" height="72" alt="Aurora Home" />
 
 # Aurora Home
 
@@ -67,57 +67,6 @@ Firmware ESP32 — initialisation des capteurs I²C, lecture périodique, fusion
 Documentation complète du projet — guide utilisateur, référence technique, API, conventions de code et guide de contribution.
 
 > Next.js 15 · Tailwind CSS v4 · Déployé en statique
-
----
-
-## Capteurs & Montages
-
-Tous les capteurs communiquent via le bus **I²C** sur les broches `GPIO21 (SDA)` et `GPIO22 (SCL)` de l'ESP32.
-
-Broches I²C de l'ESP32 : `GPIO21 (SDA)` · `GPIO22 (SCL)` · alimentation `3.3V`
-
----
-
-### SCD30 — CO₂ · Température · Humidité
-
-![Montage SCD30](images/wiring-scd30.png)
-
-| Broche SCD30 | ESP32 | Note |
-|---|---|---|
-| VDD | 3.3V | |
-| GND | GND | |
-| SDA | GPIO21 | |
-| SCL | GPIO22 | |
-| SEL | GND | Force le mode I²C |
-
----
-
-### BME280 — Pression · Température · Humidité
-
-![Montage BME280](images/wiring-bme280.png)
-
-| Broche BME280 | ESP32 | Note |
-|---|---|---|
-| VCC | 3.3V | |
-| GND | GND | |
-| SDA | GPIO21 | |
-| SCL | GPIO22 | |
-| CSB | 3.3V | Force le mode I²C |
-| SDO | GND | Adresse `0x76` · 3.3V → `0x77` |
-
----
-
-### BH1750 — Luminosité
-
-![Montage BH1750](images/wiring-bh1750.png)
-
-| Broche BH1750 | ESP32 | Note |
-|---|---|---|
-| VCC | 3.3V | |
-| GND | GND | |
-| SDA | GPIO21 | |
-| SCL | GPIO22 | |
-| ADDR | GND | Adresse `0x23` · 3.3V → `0x5C` |
 
 ---
 
