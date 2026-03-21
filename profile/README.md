@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="profile/images/logo.png" width="72" height="72" alt="Aurora Home" />
+<img src="images/logo.png" width="72" height="72" alt="Aurora Home" />
 
 # Aurora Home
 
@@ -25,7 +25,7 @@ Capteurs IoT · Dashboard temps réel · Firmware ESP32 · Authentification OTP
 
 Aurora Home est un système embarqué de surveillance environnementale. Un ESP32 collecte en continu des données de capteurs (CO₂, température, humidité, pression, luminosité) et les publie via MQTT. Une application Next.js reçoit ces données, les stocke et les affiche dans un dashboard en temps réel via Server-Sent Events.
 
-![Architecture Aurora Home](profile/images/architecture.svg)
+![Architecture Aurora Home](images/architecture.svg)
 
 ---
 
