@@ -25,25 +25,7 @@ Capteurs IoT · Dashboard temps réel · Firmware ESP32 · Authentification OTP
 
 Aurora Home est un système embarqué de surveillance environnementale. Un ESP32 collecte en continu des données de capteurs (CO₂, température, humidité, pression, luminosité) et les publie via MQTT. Une application Next.js reçoit ces données, les stocke et les affiche dans un dashboard en temps réel via Server-Sent Events.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│   ESP32                                                         │
-│   ├── SCD30    CO₂ · Température · Humidité                    │
-│   ├── BME280   Pression · Température · Humidité               │
-│   └── BH1750   Luminosité                                       │
-│         │                                                       │
-│         │  MQTT (WiFi AP)                                       │
-│         ▼                                                       │
-│   Orange Pi ── Broker MQTT                                      │
-│         │                                                       │
-│         │  instrumentation.ts                                   │
-│         ▼                                                       │
-│   Next.js App ── SSE ──► Dashboard                             │
-│         └── SQLite (Prisma)                                     │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+![Architecture Aurora Home](profile/images/architecture.svg)
 
 ---
 
