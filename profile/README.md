@@ -55,7 +55,7 @@ Documentation complète du projet — guide utilisateur, référence technique, 
 ## Contribuer
 
 Les contributions sont les bienvenues sur chacun des dépôts indépendamment.
-Consulter le [guide de contribution](https://github.com/ESP-AuroraHome/aurora-home-documentation) pour le workflow complet (fork → branch → PR).
+Consulter le [guide de contribution](https://aurora-home-documentation.vercel.app/docs/contribution) pour le workflow complet (fork → branch → PR).
 
 ---
 
