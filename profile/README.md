@@ -52,6 +52,13 @@ Documentation complète du projet — guide utilisateur, référence technique, 
 
 ---
 
+### [`aurora-home-marketing`](https://github.com/ESP-AuroraHome/aurora-home-marketing)
+Site vitrine et boutique en ligne du produit Aurora One — visionneuse 3D interactive avec réalité augmentée, tunnel d'achat Stripe, backoffice de gestion des commandes et des stocks.
+
+> Nuxt 4 · TypeScript strict · Tailwind CSS v4 · SQLite · Stripe · Three.js
+
+---
+
 ## Contribuer
 
 Les contributions sont les bienvenues sur chacun des dépôts indépendamment.
