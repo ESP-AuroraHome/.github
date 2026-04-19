@@ -38,6 +38,13 @@ Application web complète — dashboard capteurs, graphiques interactifs, authen
 
 ---
 
+### [`aurora-home-dashboard-hermes`](https://github.com/ESP-AuroraHome/aurora-home-dashboard-hermes)
+Application web interne — suivi de l’activité GitHub d’une organisation (ESP-AuroraHome par défaut), synchronisation Octokit vers une base locale, tableaux de bord et graphiques sur commits, pull requests, issues, dépôts et membres.
+
+> Next.js 15 · Drizzle ORM · LibSQL · Turso · Octokit · NextAuth
+
+---
+
 ### [`aurora-home-esp32`](https://github.com/ESP-AuroraHome/aurora-home-esp32)
 Firmware ESP32 — initialisation des capteurs I²C, lecture périodique, fusion des données, publication MQTT en JSON.
 
